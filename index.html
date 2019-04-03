@@ -16,7 +16,7 @@
       <nav class="teal">
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Travelville</a>
+            <a href="#" class="brand-logo">GoTo Brazil</a>
             <a href="#" class="sidenav-trigger"
               data-target="mobile-nav">
               <i class="material-icons">menu</i>
@@ -60,12 +60,62 @@
       </li>
     </ul>
 
+    <section class="slider">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/rio-de-janeiro-3993598_1920.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Christ, the Redeemer</h3>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                The real Brazilian spirit is to welcome with open arms!
+              </h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/maragogi-1790201_1920.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Maragogi</h3>
+              <h5 class="light grey-text text-lighten-3">
+                A Caribbean-like beach in the Brazilian coast in the Maceió State.
+              </h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/ouro-preto-1098064_1920.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Ouro Preto City</h3>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                A real jewel in Minas Gerais State with a  strong Baroque influence.
+              </h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/ipanema-beach-99388_1920.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Ipanema Beach, Rio</h3>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                A beautiful painting in the seaside.
+              </h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const sideNav = document.querySelector('.sidenav')
         M.Sidenav.init(sideNav, {})
+        const slider = document.querySelector('.slider')
+        M.Slider.init(slider, {
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 6000
+        })
       })
     </script>
   </body>
